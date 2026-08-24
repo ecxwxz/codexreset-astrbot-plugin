@@ -1,0 +1,52 @@
+{
+  "api_url": {
+    "description": "重置状态 API 地址",
+    "type": "string",
+    "default": "https://codex-resets.com/api/v1/status",
+    "hint": "默认使用 codex-resets.com 的只读公共 API；自建兼容 API 时可替换。"
+  },
+  "poll_interval_seconds": {
+    "description": "轮询间隔（秒）",
+    "type": "int",
+    "default": 120,
+    "hint": "服务端有缓存，建议不要低于 60 秒；代码会自动限制为至少 60 秒。"
+  },
+  "request_timeout_seconds": {
+    "description": "HTTP 请求超时（秒）",
+    "type": "int",
+    "default": 15
+  },
+  "timezone": {
+    "description": "显示时区",
+    "type": "string",
+    "default": "Asia/Shanghai",
+    "hint": "北京时间使用 Asia/Shanghai。"
+  },
+  "targets": {
+    "description": "主动推送目标 UMO 列表",
+    "type": "list",
+    "default": [],
+    "hint": "推荐在目标 QQ/TG 群执行 /reset_bind 自动加入；也可以手填 platform:GroupMessage:session_id，每行一个。"
+  },
+  "push_on_start": {
+    "description": "插件启动时立即推送当前状态",
+    "type": "bool",
+    "default": false,
+    "hint": "关闭可避免重启或热重载时重复刷屏。"
+  },
+  "push_watch_updates": {
+    "description": "推送预测窗口变化",
+    "type": "bool",
+    "default": true
+  },
+  "push_reset_announcements": {
+    "description": "推送新的重置公告",
+    "type": "bool",
+    "default": true
+  },
+  "send_source": {
+    "description": "推送中附带来源链接",
+    "type": "bool",
+    "default": false
+  }
+}

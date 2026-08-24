@@ -1,0 +1,19 @@
+name: astrbot_plugin_codex_reset
+display_name: ChatGPT/Codex 重置推送
+short_desc: 轮询社区预测并推送 ChatGPT/Codex 重置时间到 QQ/TG 群。
+description: 轮询 codex-resets.com 公共 API，支持 /reset 查询、QQ/TG 会话订阅和变化推送。
+desc: 轮询 codex-resets.com 公共 API，支持 /reset 查询、QQ/TG 会话订阅和变化推送。
+version: 1.0.0
+author: ctfer
+repo: ""
+social_link: ""
+astrbot_version: ">=4.16,<5"
+support_platforms:
+  - aiocqhttp
+  - telegram
+tags:
+  - ChatGPT
+  - Codex
+  - 重置
+  - 推送
+
