@@ -1,23 +1,21 @@
 # ChatGPT/Codex 重置推送 AstrBot 插件
 
-这个插件轮询 [codex-resets.com](https://codex-resets.com/) 的只读公共 API，
-把新的社区预测/公告推送到指定的 QQ 群、Telegram 群或 Telegram 频道，并提供
-`/reset` 查询命令。
+这个插件会把新的社区预测/公告推送到指定的 QQ 群、Telegram 群或 Telegram 频道，并提供
+`/reset` 等查询命令。
 
-> 数据来自社区追踪项目，站点声明其不隶属于 OpenAI。`active_watch` 是 AI 分类的
-> 预测窗口，不是官方承诺；`announced_at` 是公告时间，也不一定等于实际生效时间。
-> 插件不需要、也不会索取 OpenAI/Codex 登录凭据。
+## 前提
+
+需要astrbot
 
 ## 安装
 
-把整个 `astrbot_plugin_codex_reset` 目录复制到 AstrBot 的：
+1.WebUI中上传压缩包安装
 
-```text
-data/plugins/astrbot_plugin_codex_reset/
+2.通过链接安装 
+
 ```
-
-在 WebUI 重载插件。AstrBot 会根据 `_conf_schema.json` 生成配置；首次安装会自动
-安装 `requirements.txt` 中的 `aiohttp`。
+https://github.com/ecxwxz/codexreset-astrbot-plugin/releases/download/v1.0/astrbot_plugin_codex_reset.zip
+```
 
 ## 最快配置：在目标群执行绑定命令
 
